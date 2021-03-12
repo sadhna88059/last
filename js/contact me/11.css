@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+    
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('/images/k2.jpg');
+    background-position: center;
+    -webkit-background-size:cover ;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 200px;
+   color: blue;
+    box-shadow: 0 0 20px black;
+    background-color: rgb(227, 227, 240);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: url('/images/k2.jpg');
+    background-position: center;
+    -webkit-background-size:cover ;
+    background-size: cover;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 7px;
+    padding-right:0px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(128, 96, 96);
+    margin-top: 5px;
+
+}
+textarea{
+    resize: vertical;
+    padding: 10px;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: lato;
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button[type="submit"]:hover{
+    background-color: aquamarine;
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#status.success{
+    background-color: chartreuse;
+    animation: status 4s ease  forwards;
+}
+#status.error{
+    background-color: rgb(223, 36, 73);
+    color: aliceblue
+    ;
+    animation: status 4s ease  forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    50%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+
+
+@media screen and (max-width:720px){
+    .container{
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15px;
+        margin-top: 35px;
+        margin-bottom: 250px;
+       
+        box-shadow: 0 0 20px black;
+        background-color: rgb(227, 227, 240);
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    section{
+        height: 105vh;
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
